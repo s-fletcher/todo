@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/Avenir/AvenirNextLTPro-Medium.otf');
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  font-family: 'Avenir', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

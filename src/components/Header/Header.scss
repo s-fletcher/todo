@@ -1,0 +1,38 @@
+.header{
+    position: relative;
+    padding: 20px 50px;
+    .date {
+        display: inline-block;
+        width: 50%;
+        height: 47px;
+        position: relative;
+        text-align: left;
+        .day {
+            font-size: 3em;
+            font-weight: bold;
+            float: left;
+        }
+        .month {
+            margin-left: 60px;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+        .year {
+            margin-left: 60px;
+        }
+    }
+    .weekDay {
+        margin: 0;
+        width: 50%;
+        font-size: 1.2em;
+        font-variant: small-caps;
+        display: inline-block;
+        text-align: right;
+    }
+    .seconds {
+        color: rgb(165, 64, 64);
+        font-size: .7em;
+    }
+    .ampm {
+    }
+}
