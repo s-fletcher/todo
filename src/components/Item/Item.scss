@@ -1,0 +1,60 @@
+.item {
+    cursor: pointer;
+    border: 2px solid rgb(120, 162, 201);;
+    color: #fff;
+    border-radius: 8px;
+    width: calc(100% - 100px);
+    height: auto;
+    display: inline-block;
+    margin: 5px 0;
+    background: rgb(128, 170, 209);
+    position: relative;
+    overflow: hidden;
+    animation: fade-in .5s;
+    white-space: normal;
+    .name {
+        text-align: left;
+        float: left;
+        font-weight: normal;
+        margin: 8px 10px 5px 10px;
+        transition-delay: .5s;
+    }
+    .complete {
+        position: absolute;
+        font-size: .8em;
+        top: 8px;
+        height: 18px;
+        width: 18px;
+        right: 15px;
+        opacity: 0;
+        transition: .5s;
+    }
+
+}
+.item:hover {
+    .name {
+        margin-right: 40px;
+    }
+    .complete {
+        opacity: 1;
+    }
+}
+.remove {
+    white-space: nowrap;
+    width: 100px;
+    opacity: 0;
+    transition: .5s;
+}
+
+@keyframes fade-in {
+  from {
+      white-space: nowrap;
+      width: 100px;
+      opacity: 0;
+    }
+  to {
+      white-space: nowrap;
+      width: calc(100% - 100px);
+      opacity: 1;
+    }
+}

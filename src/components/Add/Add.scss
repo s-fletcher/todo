@@ -1,0 +1,45 @@
+.add {
+    text-align: center;
+    padding-bottom: 20px;
+    .line {
+        width: calc(100% - 100px);
+        display: inline-block;
+        margin-bottom: 20px;
+        height: 1px;
+        background: #ccc;
+    }
+    input {
+        width: 100px;
+        height: 30px;
+        padding-left: 10px;
+        border-radius: 12px;
+        color: white;
+        background: rgb(163, 223, 166);
+        border: 2px solid rgb(155, 215, 158);
+        transition: .5s;
+        font-size: 1em;
+        font-weight: bold;
+        letter-spacing: .8px;
+        cursor: pointer;
+    }
+    input::placeholder {
+        text-align: center;
+        padding-right: 10px;
+        color: white;
+        font-size: 1em;
+    }
+    input:focus {
+        cursor: text;
+        font-weight: normal;
+        outline: none;
+        width: calc(100% - 115px);
+        color: #333;
+        background: white;
+    }
+    .none {
+        text-align: center;
+        color: rgb(70, 70, 70);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

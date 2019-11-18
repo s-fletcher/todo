@@ -1,6 +1,7 @@
 .header{
     position: relative;
-    padding: 20px 50px;
+    padding: 35px 50px 20px 50px;
+    color: rgb(70, 70, 70);
     .date {
         display: inline-block;
         width: 50%;
@@ -13,12 +14,12 @@
             float: left;
         }
         .month {
-            margin-left: 60px;
+            margin-left: 70px;
             margin-top: 8px;
             font-weight: bold;
         }
         .year {
-            margin-left: 60px;
+            margin-left: 70px;
         }
     }
     .weekDay {
@@ -30,9 +31,6 @@
         text-align: right;
     }
     .seconds {
-        color: rgb(165, 64, 64);
         font-size: .7em;
-    }
-    .ampm {
     }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.scss';
 
 
+// Formatting the time to be 3:15:37 PM instead of 15:15:37
 function formatAMPM(date) {
     var hours = date.getHours();
     var minutes = date.getMinutes();
@@ -15,6 +16,7 @@ function formatAMPM(date) {
     return strTime;
 }
 
+// Header component
 class Header extends React.Component {
     constructor(props) {
         super(props);
@@ -25,6 +27,7 @@ class Header extends React.Component {
         };
     }
 
+    // Updating app every second
     componentDidMount() {
         this.timerID = setInterval(
             () => this.tick(),
@@ -32,16 +35,19 @@ class Header extends React.Component {
         );
     }
 
+    // Clearing interval to prevent memory leakage
     componentWillUnmount() {
         clearInterval(this.timerID);
     }
 
+    // Updating date every tick
     tick() {
         this.setState({
             date: new Date()
         });
     }
 
+    // Rendering
     render() {
         return (
             <div className="header">
