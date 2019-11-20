@@ -11,7 +11,6 @@
     input {
         width: 100px;
         height: 30px;
-        padding-left: 10px;
         border-radius: 12px;
         color: white;
         background: rgb(163, 223, 166);
@@ -24,12 +23,13 @@
     }
     input::placeholder {
         text-align: center;
-        padding-right: 10px;
         color: white;
+        opacity: 1;
         font-size: 1em;
     }
     input:focus {
         cursor: text;
+        padding-left: 12px;
         font-weight: normal;
         outline: none;
         width: calc(100% - 115px);
